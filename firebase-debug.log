@@ -1,0 +1,55 @@
+[debug] [2024-07-28T15:23:58.987Z] ----------------------------------------------------------------------
+[debug] [2024-07-28T15:23:58.990Z] Command:       /Users/macbook/.nvm/versions/node/v18.20.2/bin/node /Users/macbook/.nvm/versions/node/v16.16.0/bin/firebase init
+[debug] [2024-07-28T15:23:58.990Z] CLI Version:   13.1.0
+[debug] [2024-07-28T15:23:58.991Z] Platform:      darwin
+[debug] [2024-07-28T15:23:58.991Z] Node Version:  v18.20.2
+[debug] [2024-07-28T15:23:59.000Z] Time:          Sun Jul 28 2024 15:23:58 GMT+0000 (Greenwich Mean Time)
+[debug] [2024-07-28T15:23:59.000Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-28T15:23:59.004Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-07-28T15:23:59.075Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-28T15:23:59.076Z] > authorizing via signed-in user (eatsalonedevelopment@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/macbook/Documents/voters-system/win-win
+
+[debug] [2024-07-28T15:24:00.246Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-07-28T15:24:00.246Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Account Setup
+[info] 
+[info] Which account do you want to use for this project? Choose an account or add a new one now
+[info] 
+[debug] [2024-07-28T15:25:55.269Z] setProjectAccount(/Users/macbook/Documents/voters-system/win-win, danquah662@gmail.com)
+[info] 
+[info] ✔  Using account: danquah662@gmail.com 
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-07-28T15:26:09.101Z] > refreshing access token with scopes: []
+[debug] [2024-07-28T15:26:09.102Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-07-28T15:26:09.102Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-07-28T15:26:10.236Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-07-28T15:26:10.236Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-07-28T15:26:10.249Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-07-28T15:26:10.249Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"win-win","name":"win-win"}
+[debug] [2024-07-28T15:26:12.014Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2024-07-28T15:26:12.014Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2024-07-28T15:26:13.174Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (/Users/macbook/.nvm/versions/node/v16.16.0/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/Users/macbook/.nvm/versions/node/v16.16.0/lib/node_modules/firebase-tools/lib/apiv2.js:292:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID win-win. Please try again with a unique project ID.
