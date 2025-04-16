@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+// import "./globals.css";
+import { AppContextProvider } from "@/context/app";
+import { AuthContextProvider } from "@/context/auth";
+import { NavContextProvider } from "@/context/nav-context";
+import ThemeCustomization from "@/theme";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +20,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <AuthContextProvider>
+          <AppContextProvider>
+            <ThemeCustomization>
+              <NavContextProvider>{children}</NavContextProvider>
+            </ThemeCustomization>
+          </AppContextProvider>
+        </AuthContextProvider>
+      </body>
     </html>
   );
 }

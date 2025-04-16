@@ -1,4 +1,5 @@
 // The role of this context is to propagate authentication state through the App tree.
+"use client"
 
 import { createContext } from "react";
 import { AuthContextType } from "./types";

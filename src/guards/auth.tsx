@@ -6,7 +6,7 @@ import { useRouter } from "next-nprogress-bar";
 // redux
 import { useAuthContext } from "@/context/auth";
 import Loading from "@/components/loading";
-export default function Guest({ children }: { children: ReactNode }) {
+export default function AuthGuard({ children }: { children: ReactNode }) {
   const router = useRouter();
   const { isAuthenticated } = useAuthContext();
   const [isAuth, setAuth] = useState(true);
@@ -23,7 +23,4 @@ export default function Guest({ children }: { children: ReactNode }) {
 
   return children;
 }
-
-Guest.propTypes = {
-  children: PropTypes.node.isRequired,
-};
+ 

@@ -1,5 +1,4 @@
 'use client';
-import PropTypes from 'prop-types';
 import { ReactNode, useEffect, useState } from 'react';
 
 // redux
@@ -9,13 +8,13 @@ import Loading from '@/components/loading';
 import { useAuthContext } from '@/context/auth';
 import { useRouter } from 'next-nprogress-bar';
 
-export default function Guest({children}:{ children:ReactNode }) {
+export default function AdminGuard({children}:{ children:ReactNode }) {
   const router = useRouter();
   const [isAdmin, setAdmin] = useState(true);
   const { isAuthenticated, user } = useAuthContext();
 
   useEffect(() => {
-    if (!isAuthenticated || user?.role === 'voter') {
+    if (!isAuthenticated || user?.role !== "admin") {
       setAdmin(false);
       toast.error("You're not allowed to access dashboard");
       router.push('/');
@@ -27,7 +26,4 @@ export default function Guest({children}:{ children:ReactNode }) {
   }
   return children;
 }
-
-Guest.propTypes = {
-  children: PropTypes.node.isRequired
-};
+ 

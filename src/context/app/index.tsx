@@ -1,4 +1,5 @@
-import { ReactNode, useEffect, useMemo } from "react";
+"use client";
+import { ReactNode, useContext, useEffect, useMemo } from "react";
 import { AppContext } from "./context";
 
 export function AppContextProvider({ children }: { children: ReactNode }) {
@@ -19,6 +20,7 @@ export function AppContextProvider({ children }: { children: ReactNode }) {
   );
 }
 
+export const useAppContext = () => useContext(AppContext);
 
 // const ENF_OF_PRODUCT_ERROR = { message: "No more fata to fetch" };
 
@@ -31,15 +33,15 @@ export function AppContextProvider({ children }: { children: ReactNode }) {
 //   }) {
 //     const swrTag = `type-of-products-list`;
 //     let typeOfProduct = new TypeOfProductOrService();
-  
+
 //     const [metadata, setMetadata] = useState<{
 //       lastVisible: QueryDocumentSnapshot<DocumentData, DocumentData> | undefined;
 //       collectionSize: number;
 //       isLastSetsOfDocs: boolean;
 //     }>({ collectionSize: 0, lastVisible: undefined, isLastSetsOfDocs: false });
-  
+
 //     const { collectionSize, lastVisible, isLastSetsOfDocs } = metadata;
-  
+
 //     const fetcher = async (path: string) => {
 //       if (!isLastSetsOfDocs) {
 //         return typeOfProduct
@@ -62,7 +64,7 @@ export function AppContextProvider({ children }: { children: ReactNode }) {
 //       }
 //       throw ENF_OF_PRODUCT_ERROR;
 //     };
-  
+
 //     const { data, error, isLoading } = useSWR<TypesOfProductOrServiceType[]>(swrTag, fetcher, {
 //       shouldRetryOnError: false,
 //       onError: (error) => {
@@ -75,7 +77,7 @@ export function AppContextProvider({ children }: { children: ReactNode }) {
 //         }
 //       },
 //     });
-  
+
 //     function updateCollectionSize({
 //       plusCount,
 //       minusCount,
@@ -90,7 +92,7 @@ export function AppContextProvider({ children }: { children: ReactNode }) {
 //           : prev.collectionSize - (minusCount ?? 0),
 //       }));
 //     }
-  
+
 //     return {
 //       data,
 //       isLoading,

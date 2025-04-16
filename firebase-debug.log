@@ -1,55 +1,199 @@
-[debug] [2024-07-28T15:23:58.987Z] ----------------------------------------------------------------------
-[debug] [2024-07-28T15:23:58.990Z] Command:       /Users/macbook/.nvm/versions/node/v18.20.2/bin/node /Users/macbook/.nvm/versions/node/v16.16.0/bin/firebase init
-[debug] [2024-07-28T15:23:58.990Z] CLI Version:   13.1.0
-[debug] [2024-07-28T15:23:58.991Z] Platform:      darwin
-[debug] [2024-07-28T15:23:58.991Z] Node Version:  v18.20.2
-[debug] [2024-07-28T15:23:59.000Z] Time:          Sun Jul 28 2024 15:23:58 GMT+0000 (Greenwich Mean Time)
-[debug] [2024-07-28T15:23:59.000Z] ----------------------------------------------------------------------
+[debug] [2024-08-04T22:46:36.164Z] ----------------------------------------------------------------------
+[debug] [2024-08-04T22:46:36.166Z] Command:       /Users/macbook/.nvm/versions/node/v18.20.2/bin/node /Users/macbook/.nvm/versions/node/v16.16.0/bin/firebase emulators:start
+[debug] [2024-08-04T22:46:36.167Z] CLI Version:   13.1.0
+[debug] [2024-08-04T22:46:36.168Z] Platform:      darwin
+[debug] [2024-08-04T22:46:36.168Z] Node Version:  v18.20.2
+[debug] [2024-08-04T22:46:36.173Z] Time:          Sun Aug 04 2024 22:46:36 GMT+0000 (Greenwich Mean Time)
+[debug] [2024-08-04T22:46:36.173Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2024-07-28T15:23:59.004Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2024-07-28T15:23:59.075Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2024-07-28T15:23:59.076Z] > authorizing via signed-in user (eatsalonedevelopment@gmail.com)
-[info] 
-     ######## #### ########  ######## ########     ###     ######  ########
-     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
-     ######    ##  ########  ######   ########  #########  ######  ######
-     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
-     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+[debug] [2024-08-04T22:46:36.177Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-08-04T22:46:36.331Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-04T22:46:36.332Z] > authorizing via signed-in user (danquah662@gmail.com)
+[debug] [2024-08-04T22:46:36.917Z] openjdk version "17.0.8.1" 2023-08-24
 
-You're about to initialize a Firebase project in this directory:
+[debug] [2024-08-04T22:46:36.917Z] OpenJDK Runtime Environment JBR-17.0.8.1+7-1063.1-nomod (build 17.0.8.1+7-b1063.1)
+OpenJDK 64-Bit Server VM JBR-17.0.8.1+7-1063.1-nomod (build 17.0.8.1+7-b1063.1, mixed mode)
 
-  /Users/macbook/Documents/voters-system/win-win
+[debug] [2024-08-04T22:46:36.923Z] Parsed Java major version: 17
+[info] i  emulators: Starting emulators: auth, firestore, hosting, storage {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, firestore, hosting, storage"}}
+[debug] [2024-08-04T22:46:41.596Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-08-04T22:46:41.596Z] [auth] Authentication Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-08-04T22:46:41.597Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-08-04T22:46:41.597Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-08-04T22:46:41.597Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-08-04T22:46:41.597Z] [storage] Storage Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-08-04T22:46:41.597Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-08-04T22:46:41.609Z] [hub] writing locator at /var/folders/9q/gr873rqx12g36c70xkvlfxh40000gn/T/hub-win-win-b36a5.json
+[debug] [2024-08-04T22:46:41.626Z] > refreshing access token with scopes: []
+[debug] [2024-08-04T22:46:41.627Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-08-04T22:46:41.627Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-08-04T22:46:42.116Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-08-04T22:46:42.117Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-08-04T22:46:43.250Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-08-04T22:46:43.250Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-08-04T22:46:43.258Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/win-win-b36a5 [none]
+[debug] [2024-08-04T22:46:44.845Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/win-win-b36a5 200
+[debug] [2024-08-04T22:46:44.845Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/win-win-b36a5 {"projectId":"win-win-b36a5","projectNumber":"738560844469","displayName":"win-win","name":"projects/win-win-b36a5","resources":{"hostingSite":"win-win-b36a5","storageBucket":"win-win-b36a5.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_7d9f464c-9d0b-4726-9ab0-b35d9cb8629a"}
+[debug] [2024-08-04T22:46:48.242Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/win-win-b36a5/sites pageToken=&pageSize=10
+[debug] [2024-08-04T22:46:51.183Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/win-win-b36a5/sites 200
+[debug] [2024-08-04T22:46:51.183Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/win-win-b36a5/sites {"sites":[{"name":"projects/win-win-b36a5/sites/win-win-b36a5","defaultUrl":"https://win-win-b36a5.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-08-04T22:46:51.184Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/win-win-b36a5/sites 
+[debug] [2024-08-04T22:46:53.621Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/win-win-b36a5/sites 200
+[debug] [2024-08-04T22:46:53.621Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/win-win-b36a5/sites {"sites":[{"name":"projects/win-win-b36a5/sites/win-win-b36a5","defaultUrl":"https://win-win-b36a5.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-08-04T22:46:53.621Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/win-win-b36a5/webApps/-/config [none]
+[debug] [2024-08-04T22:46:54.901Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/win-win-b36a5/webApps/-/config 200
+[debug] [2024-08-04T22:46:54.901Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/win-win-b36a5/webApps/-/config {"projectId":"win-win-b36a5","storageBucket":"win-win-b36a5.appspot.com","locationId":"us-central","apiKey":"AIzaSyAI3FvV5MPILRhvI-dEBO-OmVYuxsEY8Xs","authDomain":"win-win-b36a5.firebaseapp.com","messagingSenderId":"738560844469"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
 
-[debug] [2024-07-28T15:24:00.246Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
-[debug] [2024-07-28T15:24:00.246Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-08-04T22:48:23.662Z] [web frameworks] effective firebase.json:  {
+  "hosting": [
+    {
+      "source": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "frameworksBackend": {
+        "region": "us-central1"
+      },
+      "site": "win-win-b36a5",
+      "rewrites": [
+        {
+          "source": "**",
+          "function": {
+            "functionId": "ssrwinwinb36a5",
+            "region": "us-central1",
+            "pinTag": true
+          }
+        }
+      ],
+      "redirects": [],
+      "headers": [
+        {
+          "source": "**/*.[jt]s",
+          "headers": [
+            {
+              "key": "Set-Cookie",
+              "value": "__FIREBASE_DEFAULTS__=eyJlbXVsYXRvckhvc3RzIjp7ImF1dGgiOiIxMjcuMC4wLjE6OTA5OSIsImZpcmVzdG9yZSI6IjEyNy4wLjAuMTo4MDgwIiwic3RvcmFnZSI6IjEyNy4wLjAuMTo5MTk5In0sImNvbmZpZyI6eyJwcm9qZWN0SWQiOiJ3aW4td2luLWIzNmE1Iiwic3RvcmFnZUJ1Y2tldCI6Indpbi13aW4tYjM2YTUuYXBwc3BvdC5jb20iLCJsb2NhdGlvbklkIjoidXMtY2VudHJhbCIsImFwaUtleSI6IkFJemFTeUFJM0Z2VjVNUElMUmh2SS1kRUJPLU9tVll1eHNFWThYcyIsImF1dGhEb21haW4iOiJ3aW4td2luLWIzNmE1LmZpcmViYXNlYXBwLmNvbSIsIm1lc3NhZ2luZ1NlbmRlcklkIjoiNzM4NTYwODQ0NDY5In0sIl9hdXRoVG9rZW5TeW5jVVJMIjoiL19fc2Vzc2lvbiJ9; SameSite=Strict; Expires=2026-06-30T09:28:23.662Z; Path=/;"
+            }
+          ]
+        }
+      ],
+      "cleanUrls": true,
+      "public": ".firebase/win-win-b36a5/hosting",
+      "webFramework": "next_ssr"
+    }
+  ],
+  "functions": [
+    {
+      "source": ".firebase/win-win-b36a5/functions",
+      "codebase": "firebase-frameworks-win-win-b36a5"
+    }
+  ]
+}
+[debug] [2024-08-04T22:48:25.284Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-08-04T22:48:25.284Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-08-04T22:48:25.284Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: database, pubsub {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mdatabase, pubsub\u001b[22m"}}
+[debug] [2024-08-04T22:48:25.353Z] defaultcredentials: writing to file /Users/macbook/.config/firebase/danquah662_gmail_com_application_default_credentials.json
+[debug] [2024-08-04T22:48:25.373Z] Setting GAC to /Users/macbook/.config/firebase/danquah662_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/macbook/.config/firebase/danquah662_gmail_com_application_default_credentials.json"}}
+[debug] [2024-08-04T22:48:25.375Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/win-win-b36a5/adminSdkConfig [none]
+[debug] [2024-08-04T22:48:26.613Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/win-win-b36a5/adminSdkConfig 200
+[debug] [2024-08-04T22:48:26.614Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/win-win-b36a5/adminSdkConfig {"projectId":"win-win-b36a5","storageBucket":"win-win-b36a5.appspot.com","locationId":"us-central"}
+[debug] [2024-08-04T22:48:26.647Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-08-04T22:48:26.648Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2024-08-04T22:48:26.648Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/Users/macbook/.cache/firebase/emulators/cloud-firestore-emulator-v1.18.2.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","win-win-b36a5","--rules","/Users/macbook/Documents/voters-system/win-win/firestore.rules","--single_project_mode",true,"--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/Users/macbook/.cache/firebase/emulators/cloud-firestore-emulator-v1.18.2.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"win-win-b36a5\",\"--rules\",\"/Users/macbook/Documents/voters-system/win-win/firestore.rules\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2024-08-04T22:48:32.831Z] Aug 04, 2024 10:48:32 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Aug 04, 2024 10:48:32 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://127.0.0.1:9150\n"}}
+[debug] [2024-08-04T22:48:32.889Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2024-08-04T22:48:32.889Z] 127.0.0.1:8080 {"metadata":{"emulator":{"name":"firestore"},"message":"127.0.0.1:8080"}}
+[debug] [2024-08-04T22:48:32.889Z] 
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\n"}}
+[debug] [2024-08-04T22:48:32.890Z] Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Dev App Server is now running.\n\n"}}
+[info] ✔  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2024-08-04T22:49:04.834Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-08-04T22:49:07.687Z] Temp file directory for storage emulator: /var/folders/9q/gr873rqx12g36c70xkvlfxh40000gn/T/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: /var/folders/9q/gr873rqx12g36c70xkvlfxh40000gn/T/firebase/storage/blobs"}}
+[debug] [2024-08-04T22:49:07.698Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/win-win-b36a5/sites 
+[debug] [2024-08-04T22:49:09.507Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/win-win-b36a5/sites 200
+[debug] [2024-08-04T22:49:09.507Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/win-win-b36a5/sites {"sites":[{"name":"projects/win-win-b36a5/sites/win-win-b36a5","defaultUrl":"https://win-win-b36a5.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-08-04T22:49:09.507Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/win-win-b36a5/webApps/-/config [none]
+[debug] [2024-08-04T22:49:10.857Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/win-win-b36a5/webApps/-/config 200
+[debug] [2024-08-04T22:49:10.857Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/win-win-b36a5/webApps/-/config {"projectId":"win-win-b36a5","storageBucket":"win-win-b36a5.appspot.com","locationId":"us-central","apiKey":"AIzaSyAI3FvV5MPILRhvI-dEBO-OmVYuxsEY8Xs","authDomain":"win-win-b36a5.firebaseapp.com","messagingSenderId":"738560844469"}
+[info] i  hosting[win-win-b36a5]: Serving hosting files from: .firebase/win-win-b36a5/hosting {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1m.firebase/win-win-b36a5/hosting\u001b[22m"}}
+[info] ✔  hosting[win-win-b36a5]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[debug] [2024-08-04T22:49:11.275Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-08-04T22:49:11.276Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-08-04T22:49:11.276Z] Starting Emulator UI with command {"binary":"node","args":["/Users/macbook/.cache/firebase/emulators/ui-v1.11.7/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/macbook/.cache/firebase/emulators/ui-v1.11.7/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-08-04T22:49:11.885Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-08-04T22:49:11.886Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "/Users/macbook/Documents/voters-system/win-win/.firebase/win-win-b36a5/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/macbook/Documents/voters-system/win-win/.firebase/win-win-b36a5/functions\" for Cloud Functions..."}}
+[debug] [2024-08-04T22:49:12.044Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-08-04T22:49:15.510Z] > [functions] package.json contents: {
+  "main": "server.js",
+  "dependencies": {
+    "firebase-frameworks": "^0.11.0",
+    "firebase-functions": "^4.5.0",
+    "firebase-admin": "^11.11.1"
+  },
+  "engines": {
+    "node": "18"
+  }
+}
+[debug] [2024-08-04T22:49:15.511Z] Building nodejs source
+[debug] [2024-08-04T22:49:15.512Z] Failed to find version of module node: reached end of search path /Users/macbook/Documents/voters-system/win-win/.firebase/win-win-b36a5/functions/node_modules
+[info] ✔  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-08-04T22:49:15.520Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-08-04T22:49:15.544Z] Found firebase-functions binary at '/Users/macbook/Documents/voters-system/win-win/.firebase/win-win-b36a5/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8735
+
+[debug] [2024-08-04T22:49:17.905Z] Got response from /__/functions.yaml {"endpoints":{"ssrwinwinb36a5":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["us-central1"],"labels":{},"httpsTrigger":{},"entryPoint":"ssrwinwinb36a5"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] ✔  functions: Loaded functions definitions from source: ssrwinwinb36a5. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ssrwinwinb36a5."}}
+[info] ✔  functions[us-central1-ssrwinwinb36a5]: http function initialized (http://127.0.0.1:5001/win-win-b36a5/us-central1/ssrwinwinb36a5). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/win-win-b36a5/us-central1/ssrwinwinb36a5)."}}
 [info] 
-=== Account Setup
-[info] 
-[info] Which account do you want to use for this project? Choose an account or add a new one now
-[info] 
-[debug] [2024-07-28T15:25:55.269Z] setProjectAccount(/Users/macbook/Documents/voters-system/win-win, danquah662@gmail.com)
-[info] 
-[info] ✔  Using account: danquah662@gmail.com 
-[info] 
-=== Project Setup
-[info] 
-[info] First, let's associate this project directory with a Firebase project.
-[info] You can create multiple project aliases by running firebase use --add, 
-[info] but for now we'll just set up a default project.
-[info] 
-[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
-[debug] [2024-07-28T15:26:09.101Z] > refreshing access token with scopes: []
-[debug] [2024-07-28T15:26:09.102Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
-[debug] [2024-07-28T15:26:09.102Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2024-07-28T15:26:10.236Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
-[debug] [2024-07-28T15:26:10.236Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
-[debug] [2024-07-28T15:26:10.249Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
-[debug] [2024-07-28T15:26:10.249Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"win-win","name":"win-win"}
-[debug] [2024-07-28T15:26:12.014Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
-[debug] [2024-07-28T15:26:12.014Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
-[debug] [2024-07-28T15:26:13.174Z] FirebaseError: HTTP Error: 409, Requested entity already exists
-    at responseToError (/Users/macbook/.nvm/versions/node/v16.16.0/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
-    at RetryOperation._fn (/Users/macbook/.nvm/versions/node/v16.16.0/lib/node_modules/firebase-tools/lib/apiv2.js:292:77)
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-[error] 
-[error] Error: Failed to create project because there is already a project with ID win-win. Please try again with a unique project ID.
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ 127.0.0.1:9099 │ http://127.0.0.1:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Functions      │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Hosting        │ 127.0.0.1:5000 │ n/a                             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Storage        │ 127.0.0.1:9199 │ http://127.0.0.1:4000/storage   │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500, 9150
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 

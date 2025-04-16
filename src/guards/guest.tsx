@@ -7,7 +7,7 @@ import { useAuthContext } from '@/context/auth';
 import Loading from '@/components/loading';
  
  
-export default function Guest({children}:{ children:ReactNode }) {
+export default function GuestGuard({children}:{ children:ReactNode }) {
   const router = useRouter();
   const { isAuthenticated } = useAuthContext();
   const [isAuth, setAuth] = useState(true);

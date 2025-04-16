@@ -1,3 +1,4 @@
+"use client";
 import { ReactNode, useContext, useEffect, useReducer, useRef } from "react";
 import { AuthClass } from "@/firebase/auth";
 import { AuthContext } from "./context";
@@ -59,7 +60,7 @@ const HANDLERS = {
     handlers[action.type] ? handlers[action.type](state, action) : state;
   
   
-  export const AuthProvider = (props: { children: ReactNode }) => {
+  export const AuthContextProvider = (props: { children: ReactNode }) => {
     const { children } = props;
     const [state, dispatch] = useReducer(reducer, initialState);
     const initialized = useRef(false);
