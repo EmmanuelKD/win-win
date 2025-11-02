@@ -14,7 +14,6 @@ import Drawer from "./Drawer";
 import { useAuthContext } from "@/context/auth";
 
 // types
-
 // ==============================|| MAIN LAYOUT ||============================== //
 
 const MainLayout = ({ children }: { children: ReactNode }) => {
