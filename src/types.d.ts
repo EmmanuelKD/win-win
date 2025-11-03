@@ -21,7 +21,7 @@ type Contestant = {
   status:"active"|"evicted"
   name: string;
   telephone: string;
-  univercity: string;
+  university: string;
   motivationSpeech: string;
   bio: string;
   votes: Vote[];

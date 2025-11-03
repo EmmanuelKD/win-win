@@ -16,7 +16,7 @@ export default function Contestant() {
                 "I love God, He is the sorce of my strength, he will see through what he has started",
               status: "active",
               telephone: "+232778887",
-              univercity: "Limkokwing",
+              university: "Limkokwing",
               votes: [
                 {
                   for: "00012",

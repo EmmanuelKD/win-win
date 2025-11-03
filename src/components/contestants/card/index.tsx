@@ -63,7 +63,7 @@ export default function ContestantCard({
           >
             <Typography variant="h5" textAlign={"center"}>
               {" "}
-              {contestant.univercity}
+              {contestant.university}
             </Typography>
           </Container>
         </Box>
